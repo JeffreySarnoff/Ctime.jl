@@ -5,16 +5,16 @@ Universal Time and Local Time with a great deal of care in how libc is used.
 
 ##### Copyright &copy; 2015-2018. by Jeffrey Sarnoff.  &nbsp; &nbsp; This material may be used in accord with the MIT License.
 
->
-> | ![Julia Software](https://cdn.rawgit.com/JeffreySarnoff/Multiflora/a792bcdb/images/Julia/logotype/julia.svg)|
-> |:------------------------------------------:|
-> |                                            |
-
 
 
 -----
 
 #### A Safer Way 
+
+Calendar dates are local delinations,  times-of-day are moving demarcations.
+
+Computing with time reliably requires consistent attention to the underpinnings of _what_ and _where_when_.
+
 
 
 ****
