@@ -11,3 +11,10 @@ Universal Time and Local Time with a great deal of care in how libc is used.
 -----
 
 #### A Safer Way 
+
+
+****
+Copyright &copy; 2018 by Jeffrey A Sarnoff. 
+This material is made available under The MIT License.
+****
+
