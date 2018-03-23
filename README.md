@@ -28,7 +28,7 @@ Computer systems that are networked with an actively managed time server may exp
 time codes to stay within five seconds of accurate -- the variations in latency and 
 inhomgeneities of network paths limit expectations.  For systems that manage time with
 co-located special purpose hardware that is backed by a Level II time service, the
-locally obtained time may be reported with an uncertainty of 100 nanoseconds or better.
+locally obtained time may be reported with an uncertainty of 500 nanoseconds or better.
 
 Some organizations have invested in software that improves clocking consistancy
 and use hardware managed chronometry in an effort to stay within 10 nanoseconds
