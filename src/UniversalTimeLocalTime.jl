@@ -1,3 +1,7 @@
+__precompile__()
+
+module UniversalTimeLocalTime
+
 #=
      UniversalTimeLocalTime.jl
 
@@ -343,3 +347,5 @@ function localtime_from_utime(tm::Time, dt::Date)
     end
     return ltm_time, ltm_date
 end
+
+end # UniversalTimeLocalTime
