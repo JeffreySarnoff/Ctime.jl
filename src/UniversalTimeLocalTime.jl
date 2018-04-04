@@ -90,9 +90,8 @@ end
 
 const CTimePartsZeros = (zeros(Int32, 14)...,)
 
-zero(CTimeParts) = CTimeParts(CTimePartsZeros...,)
-zeros(CTimeParts, N) where {N} = fill(zero(CTimeParts), N)
-
+zero(::Type{CTimeParts}) = CTimeParts(CTimePartsZeros...,)
+zeros(::Type{CTimeParts}, N::Int) = fill(zero(CTimeParts), N)
 
 function (==)(a::CTimeParts, b::CTimeParts)
     fields = (:sec,:min, :hour, :mday, :month, :year, :wday, :yday, :isdst)
