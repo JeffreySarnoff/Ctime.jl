@@ -2,6 +2,8 @@ __precompile__()
 
 module UniversalTimeLocalTime
 
+export utime, localtime, localtime_from_utime, utime_from_localtime
+
 #=
      UniversalTimeLocalTime.jl
 
@@ -277,10 +279,13 @@ end
 
 
 # current ut time (without leap seconds)
-utime_now() =
+utime() =
     unix2datetime(
         utm_from_lcltime(
             floor(Int64,datetime2unix(now())) ))
+
+# current local time (without leap seconds)
+localtime() = localtime_from_utime(utime_now())
 
 # ut time corresponding to local time dt (without leap seconds)
 function utime_from_localtime(dt::DateTime)
