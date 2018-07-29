@@ -285,7 +285,7 @@ utime() =
             floor(Int64,datetime2unix(now())) ))
 
 # current local time (without leap seconds)
-localtime() = localtime_from_utime(utime_now())
+localtime() = localtime_from_utime(utime())
 
 # ut time corresponding to local time dt (without leap seconds)
 function utime_from_localtime(dt::DateTime)
